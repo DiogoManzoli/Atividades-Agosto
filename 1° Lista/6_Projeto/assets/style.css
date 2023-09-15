@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+nav{
+
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+form input{
+    width: 220px;
+    padding: 10px;
+
+}
+
+form button{
+    width: 220px;
+    padding: 10px;
+}
+
+#link{
+    text-decoration: none;
+    margin-top: 8px;
+    color: rgb(48, 169, 239);
+}

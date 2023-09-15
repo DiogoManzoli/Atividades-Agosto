@@ -1,0 +1,49 @@
+CREATE DATABASE agosto;
+USE agosto;
+
+CREATE TABLE clientes(
+    id_cliente INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    idade INT NOT NULL
+);
+
+CREATE TABLE produtos(
+    id_produto INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    preco INT NOT NULL
+);
+
+CREATE TABLE funcionarios(
+    id_funcionario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    cargo VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE pedidos(
+    id_pedido INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    data date NOT NULL,
+    valor INT NOT NULL,
+    status VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE produtos2(
+    id_produto INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    quantidade_estoque INT NOT NULL
+);
+
+
+INSERT INTO clientes VALUES(NULL, 'Diogo',21),(NULL,'lUCAS',31),(NULL,'Joana',33),(NULL,'Lucinda',39);
+
+INSERT INTO produtos VALUES(NULL,'Manga',5),(NULL,'Peixe',100),(NULL,'Picanha',9999),(NULL,'Morango',30),(NULL,'Leite',20);
+
+INSERT INTO funcionarios VALUES(NULL,'Luciana','Gerente'),(NULL,'jOão','Gerente'),(NUll,'Camila','Funcionaria');
+
+INSERT INTO pedidos VALUES(NULL,'2002-07-19',200,'Aceito'),(NULL,'2023-06-15',200,'negado'),(NULL,'2006-08-18',200,'Aceito'),(NULL,'2023-08-18',200,'Aceito');
+
+INSERT INTO produtos2 VALUES(NULL,'peixe',120),(NULL,'arroz',20),(NULL,'feijão',60);
+
+
+
+

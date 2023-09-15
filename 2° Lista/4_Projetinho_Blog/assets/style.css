@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(160, 157, 157, 0.222);
+}
+
+#nav_main {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid rgba(144, 141, 141, 0.603);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-right: 70px;
+}
+
+ul a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+ul a:hover {
+    transition: 0.2s ease-out;
+    color: #242038;
+}
+
+#logo {
+    margin-left: 60px;
+    width: 150px;
+    height: auto;
+}
+
+
+
+/* Aside */
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+
+aside {
+    width: 20vw;
+}
+
+aside nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+aside nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+aside nav ul a {
+    width: 240px;
+    color: black;
+    padding: 7px;
+    font-size: 16px;
+    transition: 0.3s ease-out;
+}
+
+aside nav ul a:hover {
+    background-color: #0a100d56;
+    border-radius: 8px;
+}
+
+aside nav ul a i {
+    font-size: 22px;
+}
+
+#html {
+    color: black;
+}
+
+#css{
+    color: #1962B0;
+}
+#php{
+    color: #617CBE;
+}
+#js{
+    color: rgb(187, 184, 0);
+}
+
+
+/* Content */
+
+#two {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 8px;
+    width: 650px;
+    padding: 15px;
+    background-color: white;
+}
+
+#news {
+    width: 600px;
+    height: 300px;
+    background-color: #0A100D;
+}
+
+
+/* Comment */
+
+#comment {
+    display: flex;
+    gap: 6px;
+    flex-direction: row;
+}
+
+form input{
+    border-radius: 6px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid rgba(172, 171, 171, 0.689);
+}
+
+form input:focus{
+    outline: 2px solid rgb(68, 59, 243);
+}
+
+textarea {
+    border-radius: 6px;
+    border: 1px solid rgba(172, 171, 171, 0.689);
+    padding: 0.7rem;
+    caret-color: black;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: 2px solid rgb(68, 59, 243);
+
+}
+
+#all {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+#submit {
+    width: 90px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(68, 59, 243);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#submit:hover {
+    background-color: rgb(32, 23, 204);
+
+}
+
